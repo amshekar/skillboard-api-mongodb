@@ -16,7 +16,8 @@
     "Microsoft.Extensions.Logging.Console": "1.0.0",
     "Microsoft.Extensions.Logging.Debug": "1.0.0",
     "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
-    "MongoDB.Driver": "2.4.1"
+    "MongoDB.Driver": "2.4.1",
+    "Swashbuckle": "6.0.0-beta902"
   },
 
   "tools": {
