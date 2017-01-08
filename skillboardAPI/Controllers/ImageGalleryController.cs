@@ -44,7 +44,7 @@ namespace skillboardAPI.Controllers
                 return Ok(result);
             }
             else
-                return NotFound();
+                return NotFound("No records Found");
         }
 
 
@@ -62,7 +62,7 @@ namespace skillboardAPI.Controllers
                 }
                 else
                 {
-                    return NotFound();
+                    return NotFound("No records Found");
                 }
             }
             catch (Exception ex)
@@ -93,7 +93,7 @@ namespace skillboardAPI.Controllers
                 };
 
                 await _imageGalleryRepository.AddImage(galDoc);
-                return Ok();
+                return Ok("Record added successfully");
 
             }
             catch (Exception ex)
