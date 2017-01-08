@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using skillboardAPI.Interfaces;
 using skillboardAPI.Models;
 using MongoDB.Bson;
+using skillboardAPI.Extensions;
 
 // For more information on enabling Web API for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -47,7 +48,7 @@ namespace skillboardAPI.Controllers
         }
 
 
-
+        [NoCache]
         [HttpGet]
         [Route("imagegallery")]
         public async Task<IActionResult> GetAll()
